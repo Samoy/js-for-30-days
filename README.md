@@ -16,3 +16,4 @@
 ## 函数转换
 
 1. [复合函数](src/functiontransform/function-composition.ts)
+2. [返回传递的参数的长度](src/functiontransform/return-length-of-arguments-passed.ts)
