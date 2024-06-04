@@ -1,0 +1,20 @@
+{
+  "name": "js-for-30-days",
+  "version": "1.0.0",
+  "description": "30 天 JavaScript 挑战",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [
+    "JavaScript",
+    "TypeScript",
+    "LeetCode"
+  ],
+  "author": "Samoy",
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  }
+}
