@@ -19,3 +19,7 @@
 2. [返回传递的参数的长度](src/functiontransform/return-length-of-arguments-passed.ts)
 3. [只允许一次调用的函数](src/functiontransform/allow-one-function-call.ts)
 4. [记忆函数](src/functiontransform/memoize.ts)
+
+## Promise和Time
+
+1. [两个Promise对象相加](src/promiseandtime/add-two-promises.ts)
