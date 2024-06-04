@@ -8,4 +8,6 @@
 4. [计数器Ⅱ](src/closures/counter-ii.ts)
 
 ## 基本数组转换
+
 1. [转换数组中的每个元素](src/basearraytransform/apply-transform-over-each-element-in-array.ts)
+2. [过滤数组中的元素](src/basearraytransform/filter-elements-from-array.ts)
