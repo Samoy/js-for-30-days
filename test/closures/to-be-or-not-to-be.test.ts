@@ -6,4 +6,5 @@ test('Test to be or no to be', () => {
     expect(() => ex(5).toBe(null)).toThrowError('Not Equal')
     expect(ex(5).notToBe(null)).toBeTruthy()
     expect(ex('10').notToBe(10)).toBeTruthy()
+    expect(() => ex('10').notToBe('10')).toThrowError('Equal')
 })
