@@ -17,3 +17,4 @@
 
 1. [复合函数](src/functiontransform/function-composition.ts)
 2. [返回传递的参数的长度](src/functiontransform/return-length-of-arguments-passed.ts)
+3. [只允许一次调用的函数](src/functiontransform/allow-one-function-call.ts)
