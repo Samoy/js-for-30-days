@@ -24,3 +24,4 @@
 
 1. [两个Promise对象相加](src/promiseandtime/add-two-promises.ts)
 2. [睡眠函数](src/promiseandtime/sleep.ts)
+3. [执行可取消的延迟函数](src/promiseandtime/timeout-cancellation.ts)
