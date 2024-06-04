@@ -11,11 +11,11 @@ type Fn = (n: number, i: number) => any
  *
  * 请在不使用内置的 Array.filter 方法的情况下解决该问题。
  * @link https://leetcode.cn/problems/filter-elements-from-array/?envType=study-plan-v2&envId=30-days-of-javascript
- * @param arr
- * @param fn
+ * @param arr 原数组
+ * @param fn 过滤函数
  */
 export function filter(arr: number[], fn: Fn): number[] {
-    let resultArray: number[] = [];
+    const resultArray: number[] = [];
     for (const i in arr) {
         if (fn(arr[i], Number(i))) {
             resultArray.push(arr[i]);

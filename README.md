@@ -11,3 +11,4 @@
 
 1. [转换数组中的每个元素](src/basearraytransform/apply-transform-over-each-element-in-array.ts)
 2. [过滤数组中的元素](src/basearraytransform/filter-elements-from-array.ts)
+3. [数组归约运算](src/basearraytransform/array-reduce-transformation.ts)
