@@ -1,5 +1,9 @@
 # 30 天 JavaScript 挑战
 
+[![Test](https://github.com/Samoy/js-for-30-days/actions/workflows/test.yml/badge.svg)](https://github.com/Samoy/js-for-30-days/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/Samoy/js-for-30-days/graph/badge.svg?token=9ZU9SDB2VJ)](https://codecov.io/gh/Samoy/js-for-30-days)
+[![LeetCode](https://img.shields.io/badge/leetcode-JS_for_30_days-blue?logo=leetcode)](https://leetcode.cn/studyplan/30-days-of-javascript/)
+
 ## 闭包
 
 1. [创建Hello World函数](src/closures/create-hello-world-function.ts)
