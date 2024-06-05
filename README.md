@@ -29,3 +29,4 @@
 5. [有时间限制的Promise对象](src/promiseandtime/promise-time-limit.ts)
 6. [有时间限制的缓存](src/promiseandtime/cache-with-time-limit.ts)
 7. [函数防抖](src/promiseandtime/debounce.ts)
+8. [并行执行异步函数](src/promiseandtime/execute-asynchronous-functions-in-parallel.ts)
