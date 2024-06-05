@@ -27,3 +27,4 @@
 3. [执行可取消的延迟函数](src/promiseandtime/timeout-cancellation.ts)
 4. [间隔取消](src/promiseandtime/interval-cancellation.ts)
 5. [有时间限制的Promise对象](src/promiseandtime/promise-time-limit.ts)
+6. [有时间限制的缓存](src/promiseandtime/cache-with-time-limit.ts)

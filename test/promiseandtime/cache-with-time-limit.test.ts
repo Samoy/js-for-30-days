@@ -1,0 +1,58 @@
+import {afterAll, beforeAll, describe, expect, test, vi} from "vitest";
+import {TimeLimitedCache} from "@/promiseandtime/cache-with-time-limit";
+
+describe('Test cache with time limit', () => {
+    beforeAll(() => {
+        vi.useFakeTimers()
+    })
+    afterAll(() => {
+        vi.useRealTimers()
+    })
+    test('Test case 1', () => {
+        const cache = new TimeLimitedCache()
+        expect(cache.set(1, 42, 100)).toBeFalsy()
+        vi.advanceTimersByTime(50)
+        expect(cache.get(1)).toBe(42)
+        expect(cache.count()).toEqual(1)
+        vi.advanceTimersByTime(100)
+        expect(cache.get(1)).toEqual(-1)
+    })
+    test('Test case 2', () => {
+        const cache = new TimeLimitedCache()
+        expect(cache.set(1, 42, 50)).toBeFalsy()
+        vi.advanceTimersByTime(40)
+        expect(cache.set(1, 50, 100)).toBeTruthy()
+        vi.advanceTimersByTime(10)
+        expect(cache.get(1)).toBe(50)
+        vi.advanceTimersByTime(70)
+        expect(cache.get(1)).toBe(50)
+        vi.advanceTimersByTime(80)
+        expect(cache.get(1)).toBe(-1)
+        vi.advanceTimersByTime(50)
+        expect(cache.count()).toBe(0)
+    })
+    test('Test case 3', () => {
+        const cache = new TimeLimitedCache()
+        expect(cache.set(1, 2, 200)).toBeFalsy()
+        expect(cache.set(10, 20, 400)).toBeFalsy()
+        vi.advanceTimersByTime(50)
+        expect(cache.count()).toBe(2)
+        vi.advanceTimersByTime(50)
+        expect(cache.count()).toBe(2)
+        vi.advanceTimersByTime(200)
+        expect(cache.count()).toBe(1)
+        vi.advanceTimersByTime(200)
+        expect(cache.count()).toBe(0)
+    })
+    test('Test case 4', () => {
+        const cache = new TimeLimitedCache()
+        expect(cache.set(1, 13, 50)).toBeFalsy()
+        expect(cache.set(2, 14, 30)).toBeFalsy()
+        vi.advanceTimersByTime(40)
+        expect(cache.set(1, 14, 100)).toBeTruthy()
+        vi.advanceTimersByTime(760)
+        expect(cache.get(2)).toBe(-1)
+        vi.advanceTimersByTime(50)
+        expect(cache.count()).toBe(0)
+    })
+})
