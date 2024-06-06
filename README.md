@@ -42,3 +42,4 @@
 3. [数组原型对象的最后一个元素](src/json/array-prototype-last.ts)
 4. [分组](src/json/group-by.ts)
 5. [排序方式](src/json/sort-by.ts)
+6. [根据id合并两个数组](src/json/join-two-arrays-by-id.ts)
