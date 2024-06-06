@@ -49,3 +49,4 @@
 ## 类
 
 1. [事件发射器](src/class/event-emitter.ts)
+2. [包装数组](src/class/array-wrapper.ts)
