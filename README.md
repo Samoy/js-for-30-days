@@ -41,3 +41,4 @@
 2. [分块数组](src/json/chunk-array.ts)
 3. [数组原型对象的最后一个元素](src/json/array-prototype-last.ts)
 4. [分组](src/json/group-by.ts)
+5. [排序方式](src/json/sort-by.ts)
