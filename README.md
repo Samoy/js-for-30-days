@@ -50,3 +50,4 @@
 
 1. [事件发射器](src/class/event-emitter.ts)
 2. [包装数组](src/class/array-wrapper.ts)
+3. [使用方法链的计算器](src/class/calculator-with-method-chaining.ts)
