@@ -44,3 +44,4 @@
 5. [排序方式](src/json/sort-by.ts)
 6. [根据id合并两个数组](src/json/join-two-arrays-by-id.ts)
 7. [扁平化数组](src/json/flatten-deeply-nested-array.ts)
+8. [精简对象](src/json/compact-object.ts)
